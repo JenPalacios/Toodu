@@ -9,8 +9,47 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
 
+      <div class="masthead clearfix">
+        <div class="inner">
+          <h2 class="masthead-brand"><%= link_to "7 or nothin'", root_path %></h2>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <% if current_user %>
+                    <li> Hey <i><%= link_to (current_user.name || current_user.email), root_path%></i> ! </li>
+                  <li id="signout"><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+                  <% else %>
+                  <li class="active"><%= link_to "Sign in", new_user_session_path %></li>
+                  <% end %>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <% if flash[:notice] %>
+         <div class="alert alert-success">
+           <button type="button" class="close" data-dismiss="alert">&times;</button>
+           <%= flash[:notice] %>
+         </div>
+       <% elsif flash[:error] %>
+         <div class="alert alert-danger">
+           <button type="button" class="close" data-dismiss="alert">&times;</button>
+           <%= flash[:error] %>
+         </div>
+       <% elsif flash[:alert] %>
+         <div class="alert alert-warning">
+           <button type="button" class="close" data-dismiss="alert">&times;</button>
+           <%= flash[:alert] %>
+         </div>
+       <% end %>
+
+<%= yield %>
+</div>
+</div>
+</div>
 
 </body>
 </html>
