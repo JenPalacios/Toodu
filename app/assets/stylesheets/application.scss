@@ -22,6 +22,15 @@
   border: 1px solid #FFA500;
 }
 
+/* Custom info button */
+.btn-info {
+  background-color: #fff;
+}
+
+#greeting {
+  display: inline;
+}
+
 
 /*
  * Base structure
@@ -49,6 +58,7 @@ body {
   display: table-cell;
   vertical-align: top;
 }
+
 .cover-container {
   margin-right: auto;
   margin-left: auto;
@@ -63,11 +73,6 @@ body {
 /*
  * Header
  */
-
- .masthead {
- background-color: rgba(81,81,81,0.75);
- border-radius: 5px;
- }
 
 .masthead-brand {
   margin-top: 10px;
@@ -84,29 +89,14 @@ body {
   text-decoration: none;
 }
 
-.masthead-nav > li {
-  display: inline-block;
-}
-.masthead-nav > li + li {
-  margin-left: 20px;
-}
-.masthead-nav li a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  color: #6cac00; /* IE8 proofing */
-  color: rgba(108,172,0,.75);
-  border-bottom: 2px solid transparent;
-}
-
-.masthead-nav li a:hover {
-  text-decoration: none;
-}
 
 #signout a {
   font-size: 12px;
   color: #FFA500;
-
+  border: 1px solid #01aff0;
+  border-radius: 10px;
+  padding: 2px;
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -132,6 +122,13 @@ body {
   border: 1px solid #FFA500;
 }
 
+/* Forms */
+
+.forms {
+  position: absolute;
+  margin-top: -200px;
+  margin-left: 100px;
+}
 
 /*
  * Affix and center
@@ -140,13 +137,10 @@ body {
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+    position: absolute;
     top: 0;
   }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
+
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
