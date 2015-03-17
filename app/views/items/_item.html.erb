@@ -1,4 +1,4 @@
 <p><%=  item.name %> 
-  <%= link_to "Edit", edit_item_path(@user), method: :update %>
+  <%= link_to "Edit", [@user, item], method: :update %>
   <%= link_to "", [@user, item], method: :delete, class: 'glyphicon glyphicon-ok' %>
 </p>
