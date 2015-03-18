@@ -2,8 +2,13 @@ class ItemsController < ApplicationController
 
     def create
 
-    @item = Item.new(params.require(:item).permit(:name))
+    @user = current_user
+    @items = @user.items
 
+    @item = current_user.items.build(item_params)
+    @item.user = @user 
+    @new_item = Item.new
+    
     if @item.save
       flash[:notice] = "Item was saved."
       redirect_to current_user
@@ -14,15 +19,25 @@ class ItemsController < ApplicationController
   end
 
   def destroy
-  @item = current_user.items.find(params[:id])
+
+  @user = current_user
+  @item = @user.items.find(params[:id])
 
     if @item.destroy
       flash[:notice] = "Item was deleted"
-      redirect_to current_user
     else
-      flas[:error] = "Ooops, there was an error. Please try again."
-      render :show
+      flash[:error] = "Ooops, there was an error. Please try again."
     end
+
+    respond_to do |format|
+    format.html
+    format.js
+  end
+  end
+
+  private
+  def item_params
+  params.require(:item).permit(:name)
   end
 end
 
