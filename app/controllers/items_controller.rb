@@ -24,15 +24,13 @@ class ItemsController < ApplicationController
   @item = @user.items.find(params[:id])
 
     if @item.destroy
-      flash[:notice] = "Item was deleted"
-    else
-      flash[:error] = "Ooops, there was an error. Please try again."
-    end
-
     respond_to do |format|
     format.html
     format.js
-  end
+    end
+    else
+      flash[:error] = "Ooops, there was an error. Please try again."
+    end
   end
 
   private
