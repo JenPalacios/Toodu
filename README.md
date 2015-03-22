@@ -23,3 +23,6 @@ bootstrap-sass
 devise
 figaro, 1.0
 faker
+
+<h4>Heroku</h4>
+You can visit the app on production <a href="seven-or-nothin.herokuapp.com">here</a>
