@@ -1,17 +1,16 @@
 class ItemsController < ApplicationController
 
+    def new
+      @item = Item.new
+    end
+
     def create
-
-    @user = current_user
-    @items = @user.items
-
-    @item = current_user.items.build(item_params)
-    @item.user = @user 
-    @new_item = Item.new
+    @user = User.find(params[:user_id])  
+    @item = @user.items.build(item_params)
     
     if @item.save
       flash[:notice] = "Item was saved."
-      redirect_to current_user
+      redirect_to @user
     else
       flash[:error] = "Oops, there was an error. Please try again."
       render :new
@@ -20,8 +19,7 @@ class ItemsController < ApplicationController
 
   def destroy
 
-  @user = current_user
-  @item = @user.items.find(params[:id])
+  @item = Item.find(params[:id])
 
     if @item.destroy
     respond_to do |format|
