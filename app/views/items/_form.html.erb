@@ -1,5 +1,5 @@
 <%= form_for [@user, @user.items.build] do |f|%>
 <%= f.label :item %>
 <%= f.text_field :name, placeholder: "Create new item" %>
-<%= f.submit "Save" %>
+<%= f.submit "Save", class:"btn btn-success" %>
 <% end %>
