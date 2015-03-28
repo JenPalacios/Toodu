@@ -1,3 +1,3 @@
-every 1.day, :at => '11:59pm' do 
+every 1.day, :at => '11:25am' do 
   rake "todo:delete_items"
 end
