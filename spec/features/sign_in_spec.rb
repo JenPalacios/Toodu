@@ -1,6 +1,8 @@
 require 'rails_helper'
+include Warden::Test::Helpers
+Warden.test_mode!
 
-describe "Sign in flow" do 
+describe "Sign in flow" do
 
   before do 
     @user = create(:user)
@@ -15,7 +17,7 @@ describe "Sign in flow" do
       within 'form' do 
       click_button 'Log in'
       end
-      expect(current_path).to eq user_path
+      expect(current_path).to eq(user_path(@user))
   end
 end
 end
