@@ -6,157 +6,101 @@
  @import "bootstrap";
  @import "bootstrap-sprockets";
 
-/*
- * Globals
+ /*
+  **** COLORS ***
+  orange: rgb(230, 134, 20)
+  blue: rgb(0, 160, 246)
+  black for font: rgb(7, 7, 7)
  */
 
-/* Links */
-
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #FFA500;
-}
-
-/* Custom info button */
-.btn-info {
-  background-color: #fff;
-}
-
-#greeting {
-  display: inline;
-}
-
-
-/*
- * Base structure
- */
-
-html,
 body {
-  height: 100%;
-  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(7, 7, 7);
+} 
+
+.navbar {
+  background: transparent;
+  border: none;
 }
-body {
+
+.navbar-logo {
+  max-height: 50px;
+  max-width: 145px;
+}
+
+.nav.navbar-nav.navbar-right li a {
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+  border-bottom: 1px solid rgb(230, 134, 20);
+} 
+
+.background {
+  background-color: rgba(0, 160, 246, 0.5);
+  background: url('/assets/HeaderBackgroundImage.png');
+  height: 500px;
+}
+
+
+.SectionTitle {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.SectionText{
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.ContainerButton {
   text-align: center;
-  color: #515151;
 }
 
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
-
-}
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
-
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* Padding for spacing */
-.inner {
-  padding: 30px;
-}
-
-
-/*
- * Header
- */
-
-.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px solid #FFA500;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.masthead-brand a {
-  color: #01aff0;
-}
-.masthead-brand a:hover {
-  text-decoration: none;
-}
-
-
-#signout a {
-  font-size: 12px;
-  color: #FFA500;
-  border: 1px solid #01aff0;
+.CallToAction{
+  background-color: rgb(230, 134, 20);
+  color: #fff;
+  font-size: 2em;
   border-radius: 10px;
-  padding: 2px;
-  margin-top: 20px;
+  padding: 15px 25px 15px 25px;
 }
 
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
+.CallToAction:hover {
+  text-decoration: none;
+  background-color: rgb(0, 160, 246);
+  color: #fff;
 }
 
-
-/*
- * Cover
- */
-
-.cover {
-  padding: 0 20px;
-}
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
-  border: 1px solid #FFA500;
-}
-
-/* Forms */
-
-.forms {
-  position: absolute;
-  margin-top: -200px;
-  margin-left: 100px;
-}
-
-/*
- * Affix and center
- */
-
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: absolute;
-    top: 0;
+@media (max-width: 768px) {
+  .Text {
+  text-align: center;
   }
 
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  .background {
+    max-height: 450px;
   }
 }
 
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 700px;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
