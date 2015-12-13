@@ -40,9 +40,11 @@ body {
 .background {
   background-color: rgba(0, 160, 246, 0.5);
   background-image: image-url("HeaderBackgroundImage.png");
+  background-size: cover;
   height: 500px;
-}
 
+  margin-bottom: -2px;
+}
 
 .SectionTitle {
   font-size: 3em;
@@ -72,8 +74,44 @@ body {
   color: #fff;
 }
 
+.SectionTwo {
+  margin-top: 80px;
+}
+
+.SectionTwoBackground {
+  background-image: image-url("SectionTwoBackground.png");
+  background-size: cover;
+  height: 500px;
+}
+
+.SectionSubText {
+  font-size: 0.9em;
+}
+
+.IconContainer {
+  margin-top: 30px;
+  text-align: center;
+  margin-left: 250px;
+}
+
+.Icons img {
+  height: 60px;
+}
+
+.CheckIcon img {
+  height: 40px;
+  margin-top: 15px;
+}
+
+.IconText {
+  margin-top: 20px;
+}
+
+
+
 @media (max-width: 768px) {
-  .Text {
+
+  .ResponsiveText {
   text-align: center;
   }
 
@@ -81,28 +119,43 @@ body {
     max-height: 520px;
   }
 
+  .HeaderText {
+    margin-top: 60px;
+  }
+
   .nav.navbar-nav.navbar-right li a  {
     color: #fff;
   }
+
+  .SectionTwoBackground {
+    height: 600px;
+  }
+
+  .SectionTwo {
+    margin-top: 60px;
+  }
+
+  .IconContainer {
+    margin-left: 0;
+    margin-top: 0px;
+  }
+
+  .Icons {
+    margin-top: 10px;
+  }
+
+  .Icons img {
+    height: 40px;
+  }
+
+  .CheckIcon {
+    margin-bottom: 15px;
+  }
+
+  .CheckIcon img {
+    height: 30px;
+  }
 }
-
-.SectionTwoBackground {
-  background-image: image-url("SectionTwoBackground.png");
-  height: 500px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
