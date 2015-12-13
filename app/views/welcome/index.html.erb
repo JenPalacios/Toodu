@@ -21,7 +21,7 @@
   </nav><!-- navbar navbar-default-->
   <div class="container-fluid HeaderText">
     <div class="row">
-      <div class="col-md-4 col-md-offset-2 col-lg-3 ResponsiveText">
+      <div class="col-md-4 col-md-offset-2 ResponsiveText">
         <h1 class="SectionTitle">Be more efficient.</h1>
         <p class="SectionText">Toodu is a <b>free</b> self-destructing to-do list that helps you be more effective. If a task is not marked as complete within 7 days, Toodu will delete it.</p>
         <div class="ContainerButton"><%= link_to "Sign up", new_user_registration_path, class: "btn CallToAction" %></div>  
@@ -57,15 +57,75 @@
         <%= image_tag("List.png") %>
         <p class="IconText">Keep your tasks together</p>
       </div> 
-  </div><!-- row -->  
-
-
-
-    
-
-
+  </div><!-- row IconContainer -->
 
 </div><!-- container-fluid SectionTwoBackground -->
+<div class="container-fluid SectionThreeBackground">
+
+  <!-- CAROUSEL -->
+  <div class="row">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+      <!-- Carousel indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#testimonial-carousel" data-slide-to="1"></li>
+        <li data-target="#testimonial-carousel" data-slide-to="2"></li>
+      </ol><!-- carousel-indicators -->
+
+      <div class="carousel-inner text-center" role="listbox">
+
+        <!-- Quote 1 -->
+        <div class="item active">
+          <div class="row">
+            <div class="col-md-4 col-sm-offset-4 ">
+              <p class="TestimonialText"><span class="Quote">"</span> Toodu has helped me stay focused on my tasks and prioritize what needs to be done and when. I truly love it! <span class="Quote">"</span></p>
+              <div class="TestimonialBox">              
+                <%= image_tag ("Alex.png") %>
+                <p class="Name"> ALEX HORVATH <br> <span class="CompanyText">Sujo</span></p>
+              </div><!-- TestimonialBox -->
+            </div><!-- col-sm-8 col-sm-offset-2-->  
+          </div><!-- row -->
+        </div><!-- item active-->
+
+        <!-- Quote 2 -->
+        <div class="item">
+          <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+              <p class="TestimonialText"><span class="Quote">"</span> Toodu is amazing! I can't believe how much I get done now! <span class="Quote">"</span></p>
+              <div class="TestimonialBox">                  
+                <%= image_tag ("Yvonne.png") %>
+                <p class="Name"> YVONNE KOPPEN <br> <span class="CompanyText">YVK Photography</span></p>
+              </div><!-- TestimonialBox -->  
+            </div><!-- col-sm-8 col-sm-offset-2-->  
+          </div><!-- row -->         
+        </div><!-- item -->
+        <!-- Quote 3 -->
+        <div class="item">
+          <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+              <p class="TestimonialText"><span class="Quote">"</span> I used to forget to do things all the time. Now with Toodu, I remember to do everything on time! <span class="Quote">"</span></p>
+              <div class="TestimonialBox">    
+                <%= image_tag ("Leandro.png") %>
+                <p class="Name"> LEANDRO PORRAS <br> <span class="CompanyText">Quita Penas</span></p>
+              </div><!-- TestimonialBox -->
+            </div><!-- col-sm-8 col-sm-offset-2-->  
+          </div><!-- row -->         
+        </div><!-- item -->
+      </div><!-- carousel-inner -->
+
+      <!-- Carousel Buttons Next/Prev -->
+      <a data-slide="prev" href="#testimonial-carousel" class="left carousel-control" role="button">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a data-slide="next" href="#testimonial-carousel" class="right carousel-control" role="button">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>      
+    </div><!-- testimonial-carousel carousel slide -->
+
+  </div><!-- row -->  
+</div><!-- container-fluid SectionThreeBackground -->
 
 
 

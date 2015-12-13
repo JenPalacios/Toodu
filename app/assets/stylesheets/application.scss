@@ -3,8 +3,9 @@
  *= require_self
  */
 
- @import "bootstrap";
  @import "bootstrap-sprockets";
+ @import "bootstrap";
+
 
  /*
   **** COLORS ***
@@ -17,6 +18,8 @@ body {
   font-family: 'Roboto', sans-serif;
   color: rgb(7, 7, 7);
 } 
+
+/* NAVIGATION BAR */
 
 .navbar {
   background: transparent;
@@ -37,12 +40,15 @@ body {
   border-bottom: 1px solid rgb(230, 134, 20);
 } 
 
+/* END NAVIGATION */
+
+/* SECTION ONE */
+
 .background {
   background-color: rgba(0, 160, 246, 0.5);
   background-image: image-url("HeaderBackgroundImage.png");
   background-size: cover;
   height: 500px;
-
   margin-bottom: -2px;
 }
 
@@ -74,6 +80,9 @@ body {
   background-color: rgb(0, 160, 246);
   color: #fff;
 }
+/* END SECTION ONE */
+
+/* SECTION TWO */
 
 .SectionTwo {
   margin-top: 80px;
@@ -107,6 +116,92 @@ body {
 .IconText {
   margin-top: 20px;
 }
+
+/* END SECTION TWO*/
+
+/* SECTION THREE */ 
+.SectionThreeBackground {
+  background-image: image-url("SectionThreeBackground.png");
+  background-size: cover;
+  height: 500px;
+}
+
+/* Carousel */
+
+.TestimonialText {
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #c8c8c8;
+  height: 100px;
+}
+
+#testimonial-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 70px;
+}
+
+/* Control buttons */
+#testimonial-carousel .carousel-control {
+  background: none;
+  color: #010101;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin: 0 300px 0 300px;
+}
+
+/* Changes position of the indicators */
+#testimonial-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+
+/* Changes the color of the indicators*/
+
+#testimonial-carousel .carousel-indicators .active{
+  background: rgb(230, 134, 20);
+  border: rgb(230, 134, 20);
+}
+
+#testimonial-carousel .carousel-indicators li {
+  background: rgba(200, 200, 200, 0.1);
+  border: rgba(200, 200, 200, 0.1);
+}
+
+.Quote {
+  font-size: 1.2em;
+  color: rgba(200, 200, 200, 0.8);
+}
+
+.TestimonialBox {
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.TestimonialBox img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-top: 50px;
+}
+
+.Name {
+  font-size: 0.9em;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.CompanyText {
+  font-weight: 300;
+}
+/* end Carousel */
+/* END SECTION THREE*/
+
+
+
+
 
 
 
@@ -156,6 +251,14 @@ body {
   .CheckIcon img {
     height: 30px;
   }
+
+  #testimonial-carousel .carousel-control {
+    background: none;
+    color: #010101;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin: 0 10px 0 10px;
+}
 }
 
 
