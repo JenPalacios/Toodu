@@ -39,7 +39,7 @@
     </div><!-- col-md-6 col-md-offset-4 SectionTwo ResponsiveText -->
   </div><!-- row -->  
   <div class="row">  
-    <div class="col-md-5 col-md-offset-4 col-lg-4 ResponsiveText">
+    <div class="col-md-6 col-md-offset-4 col-lg-45 ResponsiveText">
       <p class="SectionText">After you create a task, Toodu will set the timer to 7 days. If you do not complete the task within 7 days, Toodu will delete it.</p>
       <p class="SectionSubText"><b>Our motto:</b> If a task is not completed within 7 days, why write it down on the first place?</p>
     </div><!-- col-md-5 col-md-offset-4 -->
@@ -131,6 +131,19 @@
     </div><!-- testimonial-carousel carousel slide -->
   </div><!-- row -->  
 </div><!-- container-fluid SectionThreeBackground -->
+<div class="container-fluid SectionFourBackground">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4 SectionFourText ResponsiveText">
+      <h1 class="SectionTitle">Get started today!</h1>        
+      <div class="ContainerButton ButtonFour"><%= link_to "Sign up", new_user_registration_path, class: "btn CallToAction" %></div>
+      </div><!-- col-md-4 col-md-offset-2 col-sm-9 -->     
+  </div><!-- row -->
+  <div class="UpArrow">
+    <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+    <%= link_to "BACK TO TOP", root_path, class:"TopText" %>
+  </div>    
+</div><!-- container-fluid SectionFourBackground -->
 
 
 

@@ -168,7 +168,7 @@ body {
 
 /* Changes the color of the indicators*/
 
-#testimonial-carousel .carousel-indicators .active{
+#testimonial-carousel .carousel-indicators .active {
   background: rgb(230, 134, 20);
   border: rgb(230, 134, 20);
 }
@@ -205,14 +205,45 @@ body {
 .CompanyText {
   font-weight: 300;
 }
+
 /* end Carousel */
 /* END SECTION THREE*/
 
+/* SECTION FOUR */
+
+.SectionFourBackground {
+  background-image: image-url("SectionFourBackground.png");
+  background-size: cover;
+  height: 500px;
+}
+
+.SectionFourText {
+  margin-top: 180px;
+}
+
+.ButtonFour {
+  margin-top: 40px;
+}
+
+.UpArrow {
+  color: #010101;
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 100px;
+}
+
+.TopText {
+  color: #010101;
+  margin-left: 5px;
+}
+
+.TopText:hover {
+  text-decoration: none;
+  color: rgb(230, 134, 20);
+}
 
 
-
-
-
+/* END SECTION FOUR */
 
 @media (max-width: 768px) {
 
