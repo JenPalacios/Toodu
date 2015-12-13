@@ -78,13 +78,19 @@ body {
   }
 
   .background {
-    max-height: 500px;
+    max-height: 520px;
   }
 
   .nav.navbar-nav.navbar-right li a  {
     color: #fff;
   }
 }
+
+.SectionTwoBackground {
+  background-image: image-url("SectionTwoBackground.png");
+  height: 500px;
+}
+
 
 
 
