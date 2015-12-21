@@ -84,7 +84,7 @@ body {
 
 /* SECTION TWO */
 
-.SectionTwo {
+.SectionTwoText {
   margin-top: 80px;
 }
 
@@ -123,16 +123,17 @@ body {
 
 .SectionThreeText {
   margin-top: 30px;
+  color: #c9c7c7;
 }
 
 .ThreeSubText {
-  text-align: center;
+  color: #c9c7c7;
 }
 
 .SectionThreeBackground {
   background-image: image-url("SectionThreeBackground.png");
   background-size: cover;
-  height: 580px;
+  height: 600px;
 }
 
 /* Carousel */
@@ -140,7 +141,7 @@ body {
 .TestimonialText {
   font-weight: 300;
   font-size: 1.5em;
-  color: #c8c8c8;
+  color: #c99d73;
   height: 100px;
 }
 
@@ -265,7 +266,7 @@ body {
   }
 
   .SectionTwoBackground {
-    height: 600px;
+    height: 700px;
   }
 
   .SectionTwo {
@@ -292,6 +293,10 @@ body {
   .CheckIcon img {
     height: 30px;
   }
+
+.SectionThreeBackground {
+  height: 700px;
+}
 
   #testimonial-carousel .carousel-control {
     background: none;
