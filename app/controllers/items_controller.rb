@@ -1,13 +1,13 @@
 class ItemsController < ApplicationController
 
-    def new
-      @item = Item.new
-    end
+  def new
+    @item = Item.new
+  end
 
-    def create
-    @user = User.find(params[:user_id])  
-    @item = @user.items.build(item_params)
-    
+  def create
+  @user = User.find(params[:user_id])  
+  @item = @user.items.build(item_params)
+  
     if @item.save
       flash[:notice] = "Item was saved."
       redirect_to current_user
